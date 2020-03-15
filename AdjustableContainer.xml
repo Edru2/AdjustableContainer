@@ -5,12 +5,12 @@
 		<Script isActive="yes" isFolder="no">
 			<name>AdjustableContainer</name>
 			<packageName></packageName>
-			<script>--Adjustable Container V1.3
+			<script>--Adjustable Container V1.3.1
 --Just use it like a normal Geyser Container with some extras like: 
 --moveable, adjustable size, attach to borders, minimizeable, save/load...
 --right click on top border for menu
 --Inspired heavily by Adjustable Label, GUIFrame and EMCO
---by Edru 27Feb2020
+--by Edru 15Feb2020
 
 Adjustable = Adjustable or {}
 Adjustable.Container = Adjustable.Container or Geyser.Container:new({
@@ -515,7 +515,6 @@ function Adjustable.Container.saveAll(cont)
     if v.type == "adjustablecontainer" then 
       v:save()
     end
-    print(v.name)
     Adjustable.Container.saveAll(v)
   end
 end
